@@ -2,10 +2,10 @@
 
 This is a project made with Tailwind CSS. You can easily view it with the following instructions:
 
-#### **Prerequisites**:
+#### **Prerequisites:**
 - You need to have installed Node and NPM.
 
-#### **Instructions**
+#### **Instructions:**
 1) Download the main folder.
 2) Open your console and type: `npm install` (To install all dependencies).
 3) Now type: `npm run build` (Create our CSS).

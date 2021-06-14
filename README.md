@@ -1,4 +1,4 @@
-# Welcome to ErickLeaf
+# Welcome to ErickLeaf 🌿
 
 This is a project made with Tailwind CSS. You can easily view it with the following instructions:
 

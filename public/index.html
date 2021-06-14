@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- alpine.js -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.7/dist/alpine.js" defer></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav x-data="{ open: false }" class="fixed z-10 w-full bg-secondary text-gray-100">
+
+        <!-- Header -->
+        <div class="px-2 bg-secondary text-white flex justify-between items-center">
+            <div class="flex items-center py-1"><img class="h-8" src="images/leaf.png" alt="logo"><p class="ml-1 font-extrabold text-2xl font-mono tracking-widest mt-1">ERICK</p></div>
+            <div class="text-2xl text-primary cursor-pointer" @click="open = true">&#127811;</div>
+        </div>
+
+        <div x-show="open" @click.away="open = false">
+            <div class="my-1 mx-2">
+                <input class="form-control" type="search" placeholder="Search">
+            </div>
+            
+            <div class="md:flex justify-around py-1 mx-2 items-center">
+                <div class="flex">
+                    Precio:
+                    <div class="ml-2">$</div>
+                    <div class="ml-2 text-primary">$$</div>
+                    <div class="ml-2">$$$</div>
+                    <div class="ml-2">$$$$</div>
+                </div>
+    
+                <div class="flex">
+                    <div class="">
+                        Calificación
+                    </div>
+                    <div class="ml-2 text-primary">&starf;</div>
+                    <div class="ml-px text-primary">&starf;</div>
+                    <div class="ml-px text-primary">&starf;</div>
+                    <div class="ml-px text-primary">&starf;</div>
+                    <div class="ml-px">&starf;</div>
+                </div>
+    
+                <div>
+                    <button class="btn btn-primary">
+                        Filtrar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+    <main class="mb-8">
+        <div class="h-56 md:h-100 md:bg-center bg-cover bg-no-repeat bg-center" style="background-image: url('https://images.unsplash.com/photo-1528092744838-b91de0a10615?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');">
+            <!-- Banner here -->
+        </div>
+
+        <!-- Cards -->
+        <div class="container mx-auto md:flex">
+            <div class="mx-2 md:mx-0 mt-4 md:w-1/2 md:flex md:bg-white rounded-lg">
+                <div>
+                    <img class="w-full md:w-48 md:h-full object-cover object-left rounded-lg md:rounded-r-none" src="https://images.unsplash.com/photo-1540317700647-ec69694d70d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="leaf">
+                </div>
+                <div class="relative shadow-lg md:shadow-none mx-2 p-2 bg-white md:bg-transparent rounded-lg -mt-2">
+                    <h2 class="text-xl uppercase tracking-tight font-semibold text-gray-900 md:text-lg">Piece</h2>
+                    <p class="md:text-sm md:mt-1 text-gray-700 leading-snug">We would like to show you these beautiful, caml leafs with a lot of love.</p>
+                    <div class="text-sm font-semibold text-gray-700 mt-2">$ Free</div>
+                    <div class="text-xs text-yellow-700 mt-2">&starf;&starf;&starf;&starf;&star; / 663 Reseñas</div>
+                </div>
+            </div>
+            <div class="mx-2 md:mx-0 md:ml-2 mt-4 md:w-1/2 md:flex md:bg-white rounded-lg">
+                <div>
+                    <img class="w-full md:w-48 md:h-full object-cover object-left rounded-lg md:rounded-r-none" src="https://images.unsplash.com/photo-1593369969177-94d2a36475eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80" alt="leaf">
+                </div>
+                <div class="relative shadow-lg md:shadow-none mx-2 p-2 bg-white md:bg-transparent rounded-lg -mt-2">
+                    <h2 class="text-xl uppercase tracking-tight font-semibold text-gray-900 md:text-lg">Leaf</h2>
+                    <p class="md:text-sm md:mt-1 text-gray-700 leading-snug">We would like to show you these beautiful, caml leafs with a lot of love.</p>
+                    <div class="text-sm font-semibold text-gray-700 mt-2">$ Free</div>
+                    <div class="text-xs text-yellow-700 mt-2">&starf;&starf;&starf;&starf;&star; / 636 Reseñas</div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Form -->
+        <div class="container mx-auto mt-4">
+            <div>
+                <div> Nombre </div>
+                <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+            <div>
+                <div> Email </div>
+                <input class="form-control" type="email" placeholder="Email">
+            </div>
+            <div>
+                <div> Comentarios </div>
+                <textarea class="form-control resize-none"></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary mx-auto" type="submit">
+                    Enviar
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-secondary text-white">
+        <div class="md:flex justify-around items-center md:flex-row-reverse">
+            <div class="mt-4 ml-8">
+                <div class="hover:text-primary"><i class="fab fa-facebook-f"></i> /Erick Riaño</div>
+                <div class="hover:text-primary"><i class="fab fa-twitter"></i> @_erickrh</div>
+                <div class="hover:text-primary"><i class="fab fa-instagram"></i> @_erickrh</div>
+            </div>
+            <ul class="mt-4 ml-8 mb-4 md:list-disc">
+                <li class="hover:text-primary">Support</li>
+                <li class="hover:text-primary">About us</li>
+                <li class="hover:text-primary">Registro</li>
+                <li class="hover:text-primary">License</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

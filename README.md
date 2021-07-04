@@ -13,7 +13,7 @@ This is a project made with Tailwind CSS. You can easily view it with the follow
 5) Enjoy.
 
 #### **Screenshots**
-[![](https://i.imgur.com/7R83QVg.png)](https://i.imgur.com/7R83QVg.png)
+[![](https://i.imgur.com/ogdsULq.png)](https://i.imgur.com/ogdsULq.png)
 
 [![](https://i.imgur.com/s6bS3QL.png)](https://i.imgur.com/s6bS3QL.png)
 
